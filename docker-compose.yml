@@ -22,7 +22,7 @@ services:
     build: .
     command: bash start_jobs
     volumes:
-      - '.:/petadmin'
+      - '.:/lanchonete
     volumes_from:
       - box
 
@@ -36,7 +36,7 @@ services:
     ports:
       - '3000:3000'
     volumes:
-      - '.:/petadmin'
+      - '.:/lanchonete'
     volumes_from:
     - box
 
